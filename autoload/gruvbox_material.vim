@@ -284,9 +284,9 @@ endfunction "}}}
 function! gruvbox_material#highlight(group, fg, bg, ...) "{{{
   execute 'highlight' a:group
         \ 'guifg=' . a:fg[0]
-        \ 'guibg=' . a:bg[0]
+        \ 'guibg=' . 'NONE'
         \ 'ctermfg=' . a:fg[1]
-        \ 'ctermbg=' . a:bg[1]
+        \ 'ctermbg=' . 'NONE'
         \ 'gui=' . (a:0 >= 1 ?
           \ a:1 :
           \ 'NONE')
